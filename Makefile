@@ -1,7 +1,7 @@
 CC=gcc
-CFLAGS= -Wall -Wextra 
-DEPS = Banker.h Saftey.h
-OBJ = Simulation.c Saftey.c Banker.c
+CFLAGS= -Wall -Wextra -g
+DEPS = core/Banker.h core/Saftey.h
+OBJ = Simulation.c core/Saftey.c core/Banker.c
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
