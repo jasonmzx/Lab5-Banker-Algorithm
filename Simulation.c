@@ -61,13 +61,17 @@ int main(int argc, char** argv){
         printf("Must have 3 args to represent resources to allocate\n");
         exit(1);
     }
+
+    //Work (Available)
+
     available[0] = atoi(argv[1]);
     available[1] = atoi(argv[2]);
     available[2] = atoi(argv[3]);
 
     //init need with original maximum and allocation values
     //inital allocation value can be changed based on simulation needs
-    for (int i = 0; i < NUMBER_OF_CUSTOMERS; i++) {
+
+    for (int i = 0; i < NUMBER_OF_CUSTOMERS; i++) {  // Need = Max - Allocation
         for (int j = 0; j < NUMBER_OF_RESOURCES; j++) {
             need[i][j] = maximum[i][j] - allocation[i][j];
         }
