@@ -1,3 +1,11 @@
+
+//* ###########[ Lab Groups - CRN 74025 7 ]#############
+// Juliano Falotico - 100658311
+// Jason Manarroo - 100825106
+// Ahmed Darwish - 100754743
+// William Chamberlain - 100846922
+//* ###########[ Lab Groups - CRN 74025 7 ]#############
+
 #include <time.h> 
 #include <unistd.h>
 
